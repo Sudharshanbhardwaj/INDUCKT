@@ -1,0 +1,22 @@
+/* CSS for simple table body */
+.simple-table tbody {
+    background-color: #eee;
+}
+
+.simple-table th,
+.simple-table td {
+    text-align: center;
+}
+
+.simple-table tbody tr:nth-child(even) {
+    background-color: #BEF2F5;
+}
+
+.pagination li:hover {
+    cursor: pointer;
+}
+
+/* CSS to display table rows */
+.displayed {
+    display: table-row;
+}

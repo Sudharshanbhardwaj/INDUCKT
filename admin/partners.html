@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Modernize Free</title>
+  <link rel="shortcut icon" type="image/png" href="./assets/images/logos/favicon.png" />
+  <link rel="stylesheet" href="./assets/css/styles.min.css" />
+  <script src="https://kit.fontawesome.com/3c52d6d952.js" crossorigin="anonymous"></script>
+
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+
+</head>
+
+<body>
+  <!--  Body Wrapper -->
+  <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+    data-sidebar-position="fixed" data-header-position="fixed">
+    <!-- Sidebar Start -->
+    <style>
+  .sidebar-item a.sidebar-link:hover {
+    text-decoration: none;
+}
+</style>
+<aside class="left-sidebar">
+      <!-- Sidebar scroll-->
+      <div>
+        <div class="brand-logo d-flex align-items-center justify-content-between">
+          <a href="./index.html" class="text-nowrap logo-img">
+            <img src="./assets/images/logos/logo.png" width="180" alt="" />
+          </a>
+          <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+            <i class="ti ti-x fs-8"></i>
+          </div>
+        </div>
+        <!-- Sidebar navigation-->
+        <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
+          <ul id="sidebarnav">
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <!-- <span class="hide-menu">Home</span> -->
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./index.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-layout-dashboard"></i>
+                </span>
+                <span class="hide-menu">Portfolio</span>
+              </a>
+            </li>
+
+            
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./news.html" aria-expanded="false">
+                <span>
+                  <i class="fas fa-book-open"></i>
+                </span>
+                <span class="hide-menu">News</span>
+              </a>
+            </li>
+            
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./user-list.html" aria-expanded="false">
+                <span>
+                  <i class="fas fa-user-friends"></i>
+                </span>
+                <span class="hide-menu">User List</span>
+              </a>
+            </li>
+
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./social-media.html" aria-expanded="false">
+                <span>
+                  <i class="fas fa-comment-dots"></i>
+                </span>
+                <span class="hide-menu">Social Media</span>
+              </a>
+            </li>
+
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./partners.html" aria-expanded="false">
+                <span>
+                  <i class="fas fa-hands-helping"></i>
+                </span>
+                <span class="hide-menu">Partners</span>
+              </a>
+            </li>
+
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./testimonial.html" aria-expanded="false">
+                <span>
+                  <i class="fas fa-check-square"></i>
+                </span>
+                <span class="hide-menu">Testimonial</span>
+              </a>
+            </li>
+
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./events.html" aria-expanded="false">
+                <span>
+                  <i class="fas fa-cog"></i>
+                </span>
+                <span class="hide-menu">Events</span>
+              </a>
+            </li>
+
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./blogs.html" aria-expanded="false">
+                <span>
+                  <i class="fas fa-cog"></i>
+                </span>
+                <span class="hide-menu">Blogs</span>
+              </a>
+            </li>
+            
+          </ul>
+        </nav>
+        <!-- End Sidebar navigation -->
+      </div>
+      <!-- End Sidebar scroll-->
+    </aside>
+    <!--  Sidebar End -->
+
+    <!--  Main wrapper -->
+    <div class="body-wrapper">
+
+      <!--  Header Start -->
+      <header class="app-header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="nav-item d-block d-xl-none d-flex justify-content-center align-items-center">
+                <a class="nav-link sidebartoggler nav-icon-hover" id="headerCollapse" href="javascript:void(0)" style="font-size: 24px;">
+                    <i class="ti ti-menu-2"></i>
+                </a>
+            </div>
+            <div class="nav-item d-block d-xl-none d-flex justify-content-center align-items-center" style="margin-left:25%;">
+                <img src="./assets/images/logos/logo.png" alt="">
+            </div>
+            <ul class="navbar-nav"></ul>
+            <div class="navbar-collapse justify-content-end px-0" id="navbarNav"></div>
+        </nav>
+      </header>
+      <!--  Header End -->
+
+      <style>
+        .card{
+            border: 1px solid #000;
+            height:100px ;
+        }
+      </style>
+
+        <div class="container-fluid">
+          <div class="row" style="padding-top: 1.5%;">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h2 class="m-0">Partners Logo</h2>
+                <button id="partners-logo" class="btn" style="background-color: #DB551B; color: #fff;">+ Add
+                New</button>
+            </div><hr style="border: none; background-color: grey; height: 2px; margin-top:1%; margin-bottom:2%;">
+            <div class="col-md-2">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-title" style="color:black;">Recently Uploaded</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card">
+                <div class="card-body">
+                  <img src="./assets/images/partners/amazon.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-body">
+                    <img src="./assets/images/partners/amazon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-body">
+                    <img src="./assets/images/partners/linkedin.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-body">
+                    <img src="./assets/images/partners/linkedin.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-body">
+                    <img src="./assets/images/partners/microsoft.png" alt="">
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-2">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-title" style="color:black;">Recently Uploaded</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card">
+                <div class="card-body">
+                  <img src="./assets/images/partners/amazon.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-body">
+                    <img src="./assets/images/partners/amazon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-body">
+                    <img src="./assets/images/partners/linkedin.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-body">
+                    <img src="./assets/images/partners/linkedin.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-body">
+                    <img src="./assets/images/partners/microsoft.png" alt="">
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h1 class="m-0"></h1>
+            <a href=""><strong style="color: #000; font-size:16px">View All  <i class="fas fa-angle-right"></i></strong></a>
+          </div>
+
+        </div>
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h2 class="m-0">Investor/VC Logo</h2>
+                <button id="investor-logo" class="btn" style="background-color: #DB551B; color: #fff;">+ Add
+                New</button>
+            </div><hr style="border: none; background-color: grey; height: 2px; margin-top:1%; margin-bottom:2%;">
+            <div class="col-md-2">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-title" style="color:black;">Recently Uploaded</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card">
+                <div class="card-body">
+                  <img src="./assets/images/partners/amazon.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-body">
+                    <img src="./assets/images/partners/amazon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-body">
+                    <img src="./assets/images/partners/linkedin.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-body">
+                    <img src="./assets/images/partners/linkedin.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-body">
+                    <img src="./assets/images/partners/microsoft.png" alt="">
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h1 class="m-0"></h1>
+            <a href=""><strong style="color: #000; font-size:16px">View All  <i class="fas fa-angle-right"></i></strong></a>
+          </div>
+
+        </div>
+
+  <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/sidebarmenu.js"></script>
+  <script src="./assets/js/app.min.js"></script>
+  <script src="./assets/js/table.js"></script>
+  <script src="./assets/libs/simplebar/dist/simplebar.js"></script>
+</body>
+
+</html>

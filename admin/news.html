@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Modernize Free</title>
+  <link rel="shortcut icon" type="image/png" href="./assets/images/logos/favicon.png" />
+  <link rel="stylesheet" href="./assets/css/styles.min.css" />
+  <link rel="stylesheet" href="./assets/css/index.css" />
+  <script src="https://kit.fontawesome.com/3c52d6d952.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <!--  Body Wrapper -->
+  <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+    data-sidebar-position="fixed" data-header-position="fixed">
+    <!-- Sidebar Start -->
+    <style>
+      .sidebar-item a.sidebar-link:hover {
+          text-decoration: none;
+      }
+    </style>
+
+    <aside class="left-sidebar">
+      <!-- Sidebar scroll-->
+      <div>
+        <div class="brand-logo d-flex align-items-center justify-content-between">
+          <a href="./index.html" class="text-nowrap logo-img">
+            <img src="./assets/images/logos/logo.png" width="180" alt="" />
+          </a>
+          <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+            <i class="ti ti-x fs-8"></i>
+          </div>
+        </div>
+        <!-- Sidebar navigation-->
+        <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
+          <ul id="sidebarnav">
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <!-- <span class="hide-menu">Home</span> -->
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./index.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-layout-dashboard"></i>
+                </span>
+                <span class="hide-menu">Portfolio</span>
+              </a>
+            </li>
+
+            
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./news.html" aria-expanded="false">
+                <span>
+                  <i class="fas fa-book-open"></i>
+                </span>
+                <span class="hide-menu">News</span>
+              </a>
+            </li>
+            
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./user-list.html" aria-expanded="false">
+                <span>
+                  <i class="fas fa-user-friends"></i>
+                </span>
+                <span class="hide-menu">User List</span>
+              </a>
+            </li>
+
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./social-media.html" aria-expanded="false">
+                <span>
+                  <i class="fas fa-comment-dots"></i>
+                </span>
+                <span class="hide-menu">Social Media</span>
+              </a>
+            </li>
+
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./partners.html" aria-expanded="false">
+                <span>
+                  <i class="fas fa-hands-helping"></i>
+                </span>
+                <span class="hide-menu">Partners</span>
+              </a>
+            </li>
+
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./testimonial.html" aria-expanded="false">
+                <span>
+                  <i class="fas fa-check-square"></i>
+                </span>
+                <span class="hide-menu">Testimonial</span>
+              </a>
+            </li>
+
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./events.html" aria-expanded="false">
+                <span>
+                  <i class="fas fa-cog"></i>
+                </span>
+                <span class="hide-menu">Events</span>
+              </a>
+            </li>
+
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./blogs.html" aria-expanded="false">
+                <span>
+                  <i class="fas fa-cog"></i>
+                </span>
+                <span class="hide-menu">Blogs</span>
+              </a>
+            </li>
+            
+          </ul>
+        </nav>
+        <!-- End Sidebar navigation -->
+      </div>
+      <!-- End Sidebar scroll-->
+    </aside>
+    <!--  Sidebar End -->
+    <!--  Main wrapper -->
+    <div class="body-wrapper">
+
+      <!--  Header Start -->
+      <header class="app-header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="nav-item d-block d-xl-none d-flex justify-content-center align-items-center">
+                <a class="nav-link sidebartoggler nav-icon-hover" id="headerCollapse" href="javascript:void(0)" style="font-size: 24px;">
+                    <i class="ti ti-menu-2"></i>
+                </a>
+            </div>
+            <div class="nav-item d-block d-xl-none d-flex justify-content-center align-items-center" style="margin-left:25%;">
+                <img src="./assets/images/logos/logo.png" alt="">
+            </div>
+            <ul class="navbar-nav"></ul>
+            <div class="navbar-collapse justify-content-end px-0" id="navbarNav"></div>
+        </nav>
+      </header>
+      <!--  Header End -->
+
+      <div class="container-fluid">
+        <!-- Row 1 -->
+        <div class="row" id="uploadSaveSection" style="display: none;">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-body" style="display: flex; align-items: center;">
+                <div style="flex: 1;">
+                  <img id="uploaded-image" src="./assets/images/products/s4.jpg" class="card-img-top"
+                    alt="Uploaded Image" style="width: 100%; height: 290px; padding-bottom: 3%;">
+                  <div style="text-align: center;">
+                    <form id="upload-form" enctype="multipart/form-data">
+                      <label for="file-upload" class="btn btn-primary btn-border"
+                        style="border-radius: 50px; padding: 10px 20px;">Upload Logo</label>
+                      <input id="file-upload" name="file-upload" type="file" style="display: none;">
+                    </form>
+                  </div>
+                </div>
+                <div style="flex: 3;">
+                  <div class="overflow-hidden">
+                    <div class="card-body p-4">
+                      <form id="data-form">
+                        <div class="mb-3">
+                          <label for="startupType" class="form-label">News Headline</label>
+                          <input type="text" class="form-control" id="startupType" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                          <label for="startupName" class="form-label">Short Description </label>
+                          <input type="text" class="form-control" id="startupName">
+                        </div>
+                        <div class="mb-3">
+                          <label for="websiteURL" class="form-label">News URL</label>
+                          <input type="text" class="form-control" id="websiteURL">
+                        </div>
+                        <div class="d-flex justify-content-end">
+                          <button type="submit" class="btn me-2">Cancel</button>
+                          <button type="submit" class="btn"
+                            style="border-radius: 50px; padding: 10px 20px; background-color: #514EF3; color: white;">Save</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="card">
+            <div class="card-body">
+              <div class="col-md-12">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <h2 class="m-0">Active News</h2>
+                  <button id="addNewButton" class="btn" style="background-color: #DB551B; color: #fff;">+ Add
+                    New</button>
+                </div>
+                <hr>
+                <div class="input-group mb-3" style="width: 280px;">
+                  <input type="text" class="form-control with-icon" placeholder="Search by name or startup type..."
+                    aria-label="Search" aria-describedby="search-button">
+                </div>
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead style="background-color: #F9FAFB;">
+                      <tr>
+                        <th>HEADLINE</th>
+                        <th>DESCRIPTION</th>
+                        <th>URL</th>
+                        <th>Icon</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody id="table-body">
+                      <tr>
+                        <td>TOI</td>
+                        <td>lorem Epsum........</td>
+                        <td class="table-url">abc.com</td>
+                        <td> </td>
+                        <td class="text-right"><a href=""><i class="fas fa-edit"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>India Today</td>
+                        <td>XYZ Private LImited</td>
+                        <td class="table-url">xyz.com</td>
+                        <td class="table-url">xyz.com</td>
+                        <td class="text-right"><a href=""><i class="fas fa-edit"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>Healthcare Startup</td>
+                        <td>PQS Private Limited</td>
+                        <td class="table-url">pqs.com</td>
+                        <td class="table-url">pqs.com</td>
+                        <td class="text-right"><a href=""><i class="fas fa-edit"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>Drone Startup</td>
+                        <td>TUV Private LImited</td>
+                        <td class="table-url">tuv.com</td>
+                        <td class="table-url">tuv.com</td>
+                        <td class="text-right"><a href=""><i class="fas fa-edit"></i></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h1 class="m-0"></h1>
+                <a href=""><strong style="color: #000; font-size:16px">View All  <i class="fas fa-angle-right"></i></strong></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      
+      
+    </div>
+  </div>
+</div>
+
+  <!-- Upload Image Script  -->
+
+  <script>
+    document.getElementById('file-upload').addEventListener('change', function (event) {
+      var uploadedImage = document.getElementById('uploaded-image');
+      var file = event.target.files[0];
+      var reader = new FileReader();
+
+      reader.onload = function (e) {
+        uploadedImage.src = e.target.result;
+      };
+
+      reader.readAsDataURL(file);
+    });
+  </script>
+
+
+  <!-- Submit Upload Image and Startup Form together  -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const saveButton = document.querySelector('#data-form button[type="submit"]');
+      const cancelButton = document.querySelector('#data-form button[type="reset"]');
+      const uploadForm = document.getElementById('upload-form');
+      const dataForm = document.getElementById('data-form');
+
+      saveButton.addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Submit both forms
+        uploadForm.submit();
+        dataForm.submit();
+      });
+
+      cancelButton.addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent default button behavior
+
+        // Reset both forms
+        uploadForm.reset();
+        dataForm.reset();
+      });
+    });
+  </script>
+
+  <!-- Search Button  -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Add event listener to search input
+      document.querySelector('.input-group input').addEventListener('input', function (event) {
+        const searchText = event.target.value.trim().toLowerCase();
+        const rows = document.querySelectorAll('#table-body tr');
+
+        rows.forEach(row => {
+          const rowData = Array.from(row.children).map(cell => cell.textContent.trim().toLowerCase());
+          if (rowData.some(data => data.includes(searchText))) {
+            row.style.display = '';
+          } else {
+            row.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+
+  <!-- Edit Button  -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Function to populate the form with empty values
+      function populateFormWithEmptyValues() {
+        // Clear the form values
+        document.getElementById("startupType").value = "";
+        document.getElementById("startupName").value = "";
+        document.getElementById("websiteURL").value = "";
+
+        // Display the uploaded image (replace with actual image URL if available)
+        var uploadedImage = document.getElementById("uploaded-image");
+        uploadedImage.src = "./assets/images/products/s4.jpg";
+      }
+
+      // Function to populate the form with row data and show the upload and save button section
+      function populateFormAndShowSection(row) {
+        // Reset color of all edit icons
+        resetEditIconColor();
+
+        // Get the data from the selected row
+        var startupType = row.cells[0].innerText;
+        var startupName = row.cells[1].innerText;
+        var websiteURL = row.cells[2].innerText;
+
+        // Set the data to the form
+        document.getElementById("startupType").value = startupType;
+        document.getElementById("startupName").value = startupName;
+        document.getElementById("websiteURL").value = websiteURL;
+
+        // Display the uploaded image (replace with actual image URL if available)
+        var uploadedImage = document.getElementById("uploaded-image");
+        uploadedImage.src = "./assets/images/products/s4.jpg";
+
+        // Show the upload and save button section
+        var section = document.getElementById("uploadSaveSection");
+        section.style.display = "block";
+
+        // Change the color of the edit icon
+        var editIcon = row.querySelector(".fa-edit");
+        editIcon.classList.add("edited");
+      }
+
+      // Add event listeners to the edit icons
+      var editIcons = document.querySelectorAll(".fa-edit");
+      editIcons.forEach(function (icon) {
+        icon.addEventListener("click", function (event) {
+          // Prevent the default behavior of the link
+          event.preventDefault();
+          // Find the parent table row
+          var row = icon.closest("tr");
+          // Populate the form and show the upload and save button section
+          populateFormAndShowSection(row);
+        });
+      });
+
+      // Function to handle the "Add New" button click
+      function handleAddNewButtonClick() {
+        // Populate the form with empty values
+        populateFormWithEmptyValues();
+        // Show the upload and save button section
+        var section = document.getElementById("uploadSaveSection");
+        section.style.display = "block";
+      }
+
+      // Add event listener to the add new button
+      var addNewButton = document.getElementById("addNewButton");
+      addNewButton.addEventListener("click", function (event) {
+        // Prevent the default behavior of the button
+        event.preventDefault();
+        // Handle the "Add New" button click
+        handleAddNewButtonClick();
+      });
+
+      // Function to reset edit icon color
+      function resetEditIconColor() {
+        editIcons.forEach(function (icon) {
+          icon.classList.remove("edited");
+        });
+      }
+
+      // Function to toggle display of the upload and save button section
+      function toggleUploadSaveSection() {
+        var section = document.getElementById("uploadSaveSection");
+        section.style.display = (section.style.display === "none") ? "block" : "none";
+        if (section.style.display === "none") {
+          resetEditIconColor();
+        }
+      }
+
+      // Add event listener to toggle upload and save button section
+      var toggleButton = document.getElementById("toggleButton");
+      toggleButton.addEventListener("click", function (event) {
+        // Prevent the default behavior of the button
+        event.preventDefault();
+        // Toggle display of the upload and save button section
+        toggleUploadSaveSection();
+      });
+    });
+  </script>
+
+  <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/sidebarmenu.js"></script>
+  <script src="./assets/js/app.min.js"></script>
+  <script src="./assets/libs/apexcharts/dist/apexcharts.min.js"></script>
+  <script src="./assets/libs/simplebar/dist/simplebar.js"></script>
+  <script src="./assets/js/dashboard.js"></script>
+</body>
+
+</html>

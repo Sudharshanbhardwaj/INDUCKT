@@ -1,0 +1,82 @@
+
+.btn.btn-primary.btn-border {
+  color: #000;
+  /* Set text color to black */
+  background-color: transparent;
+  /* Make the background transparent */
+  border: 1px solid #000;
+  /* Add a border with black color */
+}
+
+.btn.btn-primary.btn-border:hover {
+  color: #fff;
+  /* Change text color on hover */
+  background-color: #000;
+  /* Change background color on hover */
+}
+
+.with-icon {
+  padding-right: 30px;
+  /* Adjust padding as needed */
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>');
+  background-repeat: no-repeat;
+  background-size: 20px;
+  /* Adjust size as needed */
+  background-position: right 8px center;
+  /* Adjust position as needed */
+}
+
+.table-url {
+  color: #000;
+}
+
+.text-right a {
+  color: #6B7280;
+}
+
+.edited {
+  color: red;
+  /* Change the color as desired */
+}
+
+.footer-section {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background-color: #f8f9fa;
+  /* You can adjust the background color as needed */
+}
+
+@media (max-width: 1028px) {
+  #uploadSaveSection .card-body {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: stretch; /* Stretch items vertically */
+  }
+  #uploaded-image {
+    width: auto; /* Auto width for the image */
+    height: auto; /* Auto height for the image */
+    max-width: 100%; /* Maximum width of the image */
+    max-height: 290px; /* Maximum height of the image */
+    margin-bottom: 3%; /* Add some bottom margin */
+  }
+  #uploadSaveSection form {
+    margin-top: 10px; /* Add margin to separate forms */
+  }
+  #uploadSaveSection .d-flex {
+    justify-content: center; /* Center align buttons */
+    margin-top: 10px; /* Add margin to separate buttons */
+  }
+  #uploadSaveSection button {
+    margin-right: 0px; /* Add space between buttons */
+    margin-left: 0px; /* Add space between buttons */
+  }
+
+  /* Adjust input width to cover whole mobile width */
+  #startupType,
+  #startupName,
+  #websiteURL {
+    width: 100%;
+  }
+}

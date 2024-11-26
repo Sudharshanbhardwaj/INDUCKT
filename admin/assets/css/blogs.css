@@ -1,0 +1,196 @@
+.custom-input {
+    width: 30px;
+    height: 18px;
+    /* Adjust as needed */
+  }
+
+  .form-switch .custom-input {
+    width: 35px !important;
+    height: 20px !important;
+    margin-top: 15px;
+  }
+
+.custom-input,
+.custom-btn {
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 20px;
+  background-color: #1A73E8;
+  color: #fff;
+}
+
+.custom-input {
+  width: 30px;
+  height: 18px;
+  /* Adjust as needed */
+}
+
+.form-switch .custom-input {
+  width: 35px !important;
+  height: 20px !important;
+  margin-top: 15px;
+}
+
+
+.custom-btn {
+  width: 60px;
+  height: 26px;
+  /* Adjust as needed */
+  margin-left: 10px;
+  /* Adjust as needed */
+  background-color: #514EF3;
+}
+
+.custom-btn:hover {
+  background-color: #514EE1;
+  color: #fff;
+}
+
+.card {
+    border: 1px solid #D4C6C6;
+    height: auto;
+    width: 100%;
+    /* Added width to the card */
+  }
+
+  .card-body {
+    padding: 20px;
+    /* Added padding to the card body */
+    line-height: 1.5;
+  }
+
+  .card-body img {
+    max-width: 100%;
+    /* Ensures image doesn't overflow */
+    max-height: auto;
+    /* Adjusted height to fit within card */
+    display: block;
+    /* Ensures the image is centered */
+    margin: auto;
+    /* Centers the image horizontally */
+  }
+
+.modal.left .modal-dialog {
+    position:fixed;
+    right: 0;
+    margin: auto;
+    width: 750px;
+    max-width: 850px;
+    height: 100%;
+    -webkit-transform: translate3d(0%, 0, 0);
+    -ms-transform: translate3d(0%, 0, 0);
+    -o-transform: translate3d(0%, 0, 0);
+    transform: translate3d(0%, 0, 0);
+  }
+
+  .modal.left .modal-content {
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  .modal.right .modal-body {
+    padding: 15px 15px 80px;
+  }
+
+  .modal.right.fade .modal-dialog {
+    left: -320px;
+    -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+    -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+    -o-transition: opacity 0.3s linear, left 0.3s ease-out;
+    transition: opacity 0.3s linear, left 0.3s ease-out;
+  }
+
+  .modal.right.fade.show .modal-dialog {
+    right: 0;
+  }
+
+  /* ----- MODAL STYLE ----- */
+  .modal-content {
+    border-radius: 0;
+    padding: 5%;
+    border: none;
+  }
+
+  .modal-header {
+    border-bottom-color: #eeeeee;
+    background-color: #fafafa;
+  }
+
+  .custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #949494;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .custom-file-upload:hover {
+    background-color: #5A6268;
+  }
+
+  .custom-file-input {
+    display: none;
+  }
+
+  #fileName {
+    margin-right: 10px;
+  }
+
+  #removeFile {
+    cursor: pointer;
+    display: none;
+    margin-left: 5px;
+  }
+
+  #fileContainer {
+    border: none;
+    padding: 3px;
+    padding-left: 1%;
+    padding-right: 1%;
+    display: inline-block;
+  }
+
+  @media (max-width: 1028px) {
+    /* Adjustments for small devices (tablets and above) */
+    .modal-content {
+      width: 100%;
+      height: auto;
+    }
+    .modal.left .modal-dialog {
+        width: 100%;
+        max-width: 100%;
+      }
+  }
+  
+  /* Make the container a flexbox and allow wrapping */
+#BlogsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;  /* Adjust the gap between items */
+}
+
+/* Ensure all cards have equal height */
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Ensures that all cards stretch to the same height */
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* You can use this to make sure the cards don't overflow */
+.card img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}

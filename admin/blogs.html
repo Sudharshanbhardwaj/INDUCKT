@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Modernize Free</title>
+  <link rel="shortcut icon" type="image/png" href="./assets/images/logos/favicon.png" />
+  <link rel="stylesheet" href="./assets/css/styles.min.css" />
+  <link rel="stylesheet" href="./assets/css/blogs.css" />
+  <script src="https://kit.fontawesome.com/3c52d6d952.js" crossorigin="anonymous"></script>
+
+  <!-- <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'> -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  <style>
+    .custom-input,
+    .custom-btn {
+      padding: 5px 10px;
+      font-size: 12px;
+      border-radius: 20px;
+      background-color: #1A73E8;
+      color: #fff;
+    }
+
+    .custom-btn {
+      width: 60px;
+      height: 26px;
+      /* Adjust as needed */
+      margin-left: 10px;
+      /* Adjust as needed */
+      background-color: #514EF3;
+    }
+
+    .custom-btn:hover {
+      background-color: #514EE1;
+      color: #fff;
+    }
+
+
+    .btn1 {
+      border-radius: 20px;
+      background-color: #514EF3;
+      color: #fff;
+    }
+
+    .btn1:hover {
+      border-radius: 20px;
+      background-color: #6462EF;
+      color: #fff;
+    }
+
+    .btn2 {
+      border-radius: 20px;
+    }
+
+    .input-field {
+      background-color: #F6FAFD;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!--  Body Wrapper -->
+  <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+    data-sidebar-position="fixed" data-header-position="fixed">
+    <!-- Sidebar Start -->
+    <style>
+      .sidebar-item a.sidebar-link:hover {
+        text-decoration: none;
+      }
+    </style>
+    <aside class="left-sidebar">
+      <!-- Sidebar scroll-->
+      <div>
+        <div class="brand-logo d-flex align-items-center justify-content-between">
+          <a href="./index.html" class="text-nowrap logo-img">
+            <img src="./assets/images/logos/logo.png" width="180" alt="" />
+          </a>
+          <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+            <i class="ti ti-x fs-8"></i>
+          </div>
+        </div>
+        <!-- Sidebar navigation-->
+        <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
+          <ul id="sidebarnav">
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <!-- <span class="hide-menu">Home</span> -->
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./index.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-layout-dashboard"></i>
+                </span>
+                <span class="hide-menu">Portfolio</span>
+              </a>
+            </li>
+
+
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./news.html" aria-expanded="false">
+                <span>
+                  <i class="fas fa-book-open"></i>
+                </span>
+                <span class="hide-menu">News</span>
+              </a>
+            </li>
+
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./user-list.html" aria-expanded="false">
+                <span>
+                  <i class="fas fa-user-friends"></i>
+                </span>
+                <span class="hide-menu">User List</span>
+              </a>
+            </li>
+
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./social-media.html" aria-expanded="false">
+                <span>
+                  <i class="fas fa-comment-dots"></i>
+                </span>
+                <span class="hide-menu">Social Media</span>
+              </a>
+            </li>
+
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./partners.html" aria-expanded="false">
+                <span>
+                  <i class="fas fa-hands-helping"></i>
+                </span>
+                <span class="hide-menu">Partners</span>
+              </a>
+            </li>
+
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./testimonial.html" aria-expanded="false">
+                <span>
+                  <i class="fas fa-check-square"></i>
+                </span>
+                <span class="hide-menu">Testimonial</span>
+              </a>
+            </li>
+
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./events.html" aria-expanded="false">
+                <span>
+                  <i class="fas fa-cog"></i>
+                </span>
+                <span class="hide-menu">Events</span>
+              </a>
+            </li>
+
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./blogs.html" aria-expanded="false">
+                <span>
+                  <i class="fas fa-cog"></i>
+                </span>
+                <span class="hide-menu">Blogs</span>
+              </a>
+            </li>
+          </ul>
+
+        </nav>
+        <!-- End Sidebar navigation -->
+      </div>
+      <!-- End Sidebar scroll-->
+    </aside>
+    <!--  Sidebar End -->
+
+    <!--  Main wrapper -->
+    <div class="body-wrapper">
+
+      <!--  Header Start -->
+      <header class="app-header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="nav-item d-block d-xl-none d-flex justify-content-center align-items-center">
+                <a class="nav-link sidebartoggler nav-icon-hover" id="headerCollapse" href="javascript:void(0)" style="font-size: 24px;">
+                    <i class="ti ti-menu-2"></i>
+                </a>
+            </div>
+            <div class="nav-item d-block d-xl-none d-flex justify-content-center align-items-center" style="margin-left:25%;">
+                <img src="./assets/images/logos/logo.png" alt="">
+            </div>
+            <ul class="navbar-nav"></ul>
+            <div class="navbar-collapse justify-content-end px-0" id="navbarNav"></div>
+        </nav>
+      </header>
+      <!--  Header End -->
+
+      <div class="container-fluid">
+        <div class="row">          
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2 class="m-0">Blogs</h2>
+            <div class="d-flex">
+              <button id="show-blogs" class="btn btn-secondary mr-2" style="background-color: #DB551B; color: #fff;"
+                >Show Blogs</button>
+              <button id="add-blog" class="btn" style="background-color: #DB551B; color: #fff;" data-toggle="modal"
+                data-target="#addBlogModal">+ Add Blog</button>
+            </div>
+          </div>
+                    
+          
+
+          <!-- Right Side Model  -->
+          <div class="modal left fade" id="addBlogModal" tabindex="" role="dialog" aria-labelledby="addBlogModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <a href="" onclick="closeModal()" style="color:black">
+                  <span class="material-symbols-outlined">keyboard_backspace</span>
+                </a>
+                <div class="modal-body">
+                  <form id="blogForm" method="POST" enctype="multipart/form-data" class="styled-form">
+                    <div class="form-group">
+                      <label style="font-weight: bold; color:#092C4C;" for="newsHeadline">News Headline</label>
+                      <input type="text" class="form-control input-field" id="newsHeadline" name="newsHeadline" placeholder="Enter headline">
+                    </div>
+                    <div class="form-group">
+                      <label style="font-weight: bold; color:#092C4C;" for="shortDescription">Short Description</label>
+                      <textarea class="form-control input-field" id="shortDescription" name="shortDescription" rows="3" placeholder="Enter short description"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label style="font-weight: bold; color:#092C4C;" for="blogContent">Blog Content</label>
+                      <textarea class="form-control input-field" id="blogContent" name="blogContent" rows="5" placeholder="Enter blog content"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label style="font-weight: bold; color:#092C4C;" for="blogLink">Blog Link</label>
+                      <input type="text" class="form-control input-field" id="blogLink" name="blogLink" placeholder="Enter blog link">
+                    </div>
+                    <div class="form-group" style="padding-top:3%;">
+                      <label style="font-weight: normal;" for="imageUpload" class="custom-file-upload">
+                        Upload Image
+                        <input type="file" class="custom-file-input" id="imageUpload" name="imageUpload" onchange="displayFileName()">
+                      </label>
+                      <div id="fileContainer">
+                        <span id="fileName"></span>
+                        <span id="removeFile" onclick="removeFileName()"><i class="fas fa-times"></i></span>
+                      </div>
+                      <div style="float: right;">
+                        <button type="button" class="btn btn2" onclick="closeModal()">Cancel</button>
+                        <button type="submit" class="btn btn1">Save</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <hr style="border: none; background-color: grey; height: 2px; margin-top:1%; margin-bottom:2%;">
+          
+          <div class="row" id="BlogsContainer"> <!--To show up the blogs--> </div>
+
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h1 class="m-0"></h1>
+            <a href="">
+              <strong style="color: #000; font-size:16px"> Load More <i
+                  class="fas fa-angle-right" id="loadMoreBlogs"></i></strong>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+<!-- 
+      <div class="footer-section py-6 px-6 text-center">
+        <p class="mb-0 fs-4">Copyright © 2024 <a href="#" target="_blank"
+            class="pe-1 text-primary text-decoration-underline">Induckt</a></p>
+      </div> -->
+
+      <!-- Right Side Model  -->
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          // Event listener for the form submission (blog creation)
+          const blogForm = document.getElementById('blogForm');
+          const blogsContainer = document.getElementById('BlogsContainer');
+          const fileNameSpan = document.getElementById('fileName');
+          const fileContainer = document.getElementById('fileContainer');
+          const removeFileButton = document.getElementById('removeFile');
+      
+          blogForm.addEventListener('submit', async function (event) {
+            event.preventDefault(); // Prevent default form submission
+      
+            const formData = new FormData(blogForm);
+      
+            try {
+              // Send the data to the server
+              const response = await fetch('/submit-blog', {
+                method: 'POST',
+                body: formData, // Automatically sets the Content-Type as multipart/form-data
+              });
+      
+              if (!response.ok) throw new Error('Failed to submit blog.');
+      
+              const result = await response.json();
+      
+              // Extract the blog data and ID
+              const blogData = result.blog;
+              const blogId = blogData.id; // Get the blog ID
+      
+              // Create a new blog card and append it to the container
+              const blogCard = document.createElement('div');
+              blogCard.classList.add('col-md-3');
+              blogCard.id = `blog-${blogId}`;  // Set the ID for easy reference later
+      
+              // Set the content of the blog card
+              blogCard.innerHTML = `
+                <div class="card" style="position: relative;">
+                  <div class="card-body">
+                    <!-- X Button to remove blog -->
+                    <button class="btn btn-sm btn-danger delete-btn" 
+                            style="position: absolute; top: 5px; right: 10px; background: none; border: none; font-size: 20px; color: red; cursor: pointer;">&times;</button>
+                    
+                    <img src="${blogData.filePath}" alt="" style="padding-bottom:5%; width: 100%; height: auto; object-fit: cover;">
+                    <strong>${blogData.headline}</strong>
+                    <span>${blogData.shortDescription}</span>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input custom-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
+                      <button type="button" class="btn custom-btn" style="float: right; margin-top: 10px;">Send</button>
+                    </div>
+                  </div>
+                </div>
+              `;
+      
+              // Append the new blog card to the container
+              blogsContainer.appendChild(blogCard);
+      
+              // Add the delete functionality to the X button
+              const deleteBtn = blogCard.querySelector('.delete-btn');
+              deleteBtn.addEventListener('click', async function () {
+                try {
+                  // Send a DELETE request to remove the blog from the database
+                  const response = await fetch(`/delete-blog/${blogId}`, {
+                    method: 'DELETE',
+                  });
+      
+                  if (!response.ok) throw new Error('Failed to delete the blog.');
+      
+                  // Remove the blog card from the DOM
+                  blogCard.remove();
+                  alert('Blog deleted successfully.');
+                } catch (error) {
+                  console.error('Error deleting blog:', error);
+                  alert('An error occurred while deleting the blog.');
+                }
+              });
+      
+              // Reset the form
+              blogForm.reset();
+
+              fileNameSpan.textContent = '';
+              fileContainer.style.border = 'none';
+              removeFileButton.style.display = 'none';
+
+            } catch (error) {
+              console.error('Error:', error.message);
+              alert('There was an error submitting the blog. Please try again.');
+            }
+          });
+      
+          // Function to load blogs
+          document.getElementById('show-blogs').addEventListener('click', async function () {
+            const blogsContainer = document.getElementById('BlogsContainer');
+            let currentOffset = 0;
+            const limit = 9;
+      
+            try {
+              const response = await fetch(`/fetch-blogs?limit=${limit}&offset=${currentOffset}`);
+              const blogs = await response.json();
+      
+              if (response.ok) {
+                displayBlogs(blogs); // Append the new blogs
+                currentOffset += limit; // Increment offset for the next batch of blogs
+              } else {
+                console.error('Failed to fetch blogs:', blogs.error);
+                alert('Failed to fetch blogs.');
+              }
+            } catch (error) {
+              console.error('Error fetching blogs:', error);
+              alert('An unexpected error occurred.');
+            }
+          });
+      
+          // Function to display blogs in the frontend
+          function displayBlogs(blogs) {
+            const blogsContainer = document.getElementById('BlogsContainer');
+            
+            // Loop through each blog and create the blog card
+            blogs.forEach(blog => {
+              const blogCard = document.createElement('div');
+              blogCard.classList.add('col-md-3');
+              blogCard.id = `blog-${blog.blog_id}`;  // Set the ID for each blog card
+      
+              // Construct the blog card HTML with the unique ID
+              blogCard.innerHTML = `
+                <div class="card" style="position: relative;">
+                  <div class="card-body">
+                    <!-- X Button to remove blog -->
+                    <button class="btn btn-sm btn-danger delete-btn" 
+                            style="position: absolute; top: 5px; right: 10px; background: none; border: none; font-size: 20px; color: red; cursor: pointer;">&times;</button>
+                    
+                    <img src="${blog.image_url}" alt="" style="padding-bottom:5%; width: 100%; height: auto; object-fit: cover;">
+                    <strong>${blog.headline}</strong>
+                    <span>${blog.short_description}</span>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input custom-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
+                      <button type="button" class="btn custom-btn" style="float: right; margin-top: 10px;">Send</button>
+                    </div>
+                  </div>
+                </div>
+              `;
+      
+              // Append the new blog card to the container
+              blogsContainer.appendChild(blogCard);
+      
+              // Add delete button functionality
+              const deleteBtn = blogCard.querySelector('.delete-btn');
+              deleteBtn.addEventListener('click', async function () {
+                try {
+                  // Send a DELETE request to remove the blog from the database
+                  const response = await fetch(`/delete-blog/${blog.blog_id}`, {
+                    method: 'DELETE',
+                  });
+      
+                  if (!response.ok) throw new Error('Failed to delete the blog.');
+      
+                  // Remove the blog card from the DOM
+                  blogCard.remove();
+                  alert('Blog deleted successfully.');
+                } catch (error) {
+                  console.error('Error deleting blog:', error);
+                  alert('An error occurred while deleting the blog.');
+                }
+              });
+            });
+          }
+      
+          // Function to load more blogs when button is clicked
+          let currentOffset = 0;
+          const limit = 9;
+      
+          document.getElementById('loadMoreBlogs').addEventListener('click', async function () {
+            try {
+              const response = await fetch(`/fetch-blogs?limit=${limit}&offset=${currentOffset}`);
+              const blogs = await response.json();
+      
+              if (response.ok) {
+                displayBlogs(blogs);  // Append more blogs
+                currentOffset += limit;  // Update offset for next batch
+              } else {
+                console.error('Failed to fetch more blogs:', blogs.error);
+                alert('Failed to fetch more blogs.');
+              }
+            } catch (error) {
+              console.error('Error fetching more blogs:', error);
+              alert('An unexpected error occurred.');
+            }
+          });
+        });
+      </script>
+      
+      <script>
+        function displayFileName() {
+          const input = document.getElementById('imageUpload');
+          const fileNameSpan = document.getElementById('fileName');
+          const fileContainer = document.getElementById('fileContainer');
+          if (input.files.length > 0) {
+            fileNameSpan.textContent = input.files[0].name;
+            fileContainer.style.border = '1px solid #ccc';
+            document.getElementById('removeFile').style.display = 'inline-block';
+          } else {
+            fileNameSpan.textContent = '';
+            fileContainer.style.border = 'none';
+            document.getElementById('removeFile').style.display = 'none';
+          }
+        }
+
+        function removeFileName() {
+          document.getElementById('imageUpload').value = '';
+          document.getElementById('fileName').textContent = '';
+          document.getElementById('fileContainer').style.border = 'none';
+          document.getElementById('removeFile').style.display = 'none';
+        }
+
+        function closeModal() {
+          const modal = document.getElementById('addBlogModal');
+          const backdrop = document.getElementsByClassName('modal-backdrop')[0]; // Target the backdrop element
+
+          modal.classList.remove('show'); // Remove the 'show' class to hide the modal
+          backdrop.classList.remove('show'); // Remove the 'show' class to hide the backdrop
+          document.body.classList.remove('modal-open'); // Remove the class added to the body when the modal is open
+        }
+      </script>
+
+      </script>
+      <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
+      <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- jQuery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+      <!-- Popper.js -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+      <!-- Bootstrap JS -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+      <script src="./assets/js/sidebarmenu.js"></script>
+      <script src="./assets/js/app.min.js"></script>
+      <script src="./assets/js/table.js"></script>
+      <script src="./assets/libs/simplebar/dist/simplebar.js"></script>
+</body>
+
+</html>
